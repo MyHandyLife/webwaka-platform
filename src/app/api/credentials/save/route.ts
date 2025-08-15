@@ -1,5 +1,8 @@
-export const runtime = "nodejs";
-export const dynamic = "force-dynamic";
+await fetch("/api/credentials/save", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ env, keyName, value, userId: "superadmin" })
+});
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
