@@ -1,3 +1,9 @@
+await fetch("/api/credentials/verify", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ keyName, value })
+});
+
 import { webcrypto as crypto } from "crypto";
 
 export async function encrypt(secretKey: string, plaintext: string) {
